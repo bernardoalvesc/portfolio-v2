@@ -84,7 +84,7 @@ const Education = () => {
                 <p className="text-lg text-gray-100 leading-relaxed">
                   Formação completa no curso de Língua Inglesa pela escola CNA.
                   Realização do Cambridge B2 First (antigo FCE), atingindo 168
-                  pontos e conquistando a certificação.
+                  pontos e conquistando a certificação nível B2.
                 </p>
               </div>
             </div>
