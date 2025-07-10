@@ -56,12 +56,9 @@ const Hero = () => {
           >
             <p className="text-lg sm:text-xl md:text-3xl text-gray-200 mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed font-light">
               Criando experiências digitais
-              <span className="text-purple-300 font-semibold">
-                {" "}
-                extraordinárias
-              </span>
+              <span className="text-purple-300 font-semibold"> marcantes</span>
               <br className="hidden md:block" />
-              com código limpo e design inovador
+              com código limpo e muito café ☕.
             </p>
           </div>
 
