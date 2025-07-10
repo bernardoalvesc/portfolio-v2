@@ -33,7 +33,7 @@ const Projects = () => {
             <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 hover:scale-105 transition-all duration-300 animate-slide-in-left">
               <div className="h-64 border-b border-white/10 overflow-hidden">
                 <img
-                  src="public\images\aztra.jpg"
+                  src="/images/aztra.jpg"
                   alt="Imagem do Projeto Aztra"
                   className="object-cover w-full h-full"
                 />
@@ -81,7 +81,7 @@ const Projects = () => {
             >
               <div className="h-64 border-b border-white/10 overflow-hidden">
                 <img
-                  src="public\images\explorer.jpg"
+                  src="/images/explorer.jpg"
                   alt="GitHub Explorer"
                   className="object-cover w-full h-full"
                 />
@@ -129,7 +129,7 @@ const Projects = () => {
             >
               <div className="h-64 border-b border-white/10 overflow-hidden">
                 <img
-                  src="public\images\midnighty.jpg"
+                  src="/images/midnighty.jpg"
                   alt="Midnighty"
                   className="object-cover w-full h-full"
                 />
@@ -177,7 +177,7 @@ const Projects = () => {
             >
               <div className="h-64 border-b border-white/10 overflow-hidden">
                 <img
-                  src="public\images\sperto.jpg"
+                  src="/images/sperto.jpg"
                   alt="espertofit"
                   className="object-cover w-full h-full"
                 />
