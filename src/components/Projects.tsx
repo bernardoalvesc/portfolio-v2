@@ -68,7 +68,7 @@ const Projects = () => {
                     className="w-full bg-white/10 backdrop-blur-xl text-white hover:text-purple-200 hover:bg-white/20 border border-white/20"
                   >
                     <ExternalLink className="mr-2 h-5 w-5" />
-                    Acesse o site da empresa e confira
+                    Acesse o site
                   </Button>
                 </a>
               </div>
@@ -136,7 +136,7 @@ const Projects = () => {
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  Projeto 3
+                  Midnighty Studio
                 </h3>
                 <p className="text-gray-200 mb-6 leading-relaxed">
                   Site desenvolvido para o studio Midnighty, um studio
