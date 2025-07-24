@@ -72,9 +72,16 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 25%, #4a1a5c 50%, #2d1b4e 75%, #1a0b2e 100%);
+    @apply bg-background text-foreground font-sans;
+    font-family: "Space Grotesk", sans-serif !important;
+    background: linear-gradient(
+      135deg,
+      #1a0b2e 0%,
+      #2d1b4e 25%,
+      #4a1a5c 50%,
+      #2d1b4e 75%,
+      #1a0b2e 100%
+    );
     background-size: 400% 400%;
     animation: gradientShift 20s ease-in-out infinite;
     min-height: 100vh;
@@ -83,18 +90,37 @@
   }
 
   body::before {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
-      radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.6), transparent),
-      radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.4), transparent),
-      radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,0.7), transparent);
+    background-image: radial-gradient(
+        2px 2px at 20px 30px,
+        #ffffff,
+        transparent
+      ),
+      radial-gradient(
+        2px 2px at 40px 70px,
+        rgba(255, 255, 255, 0.8),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 90px 40px,
+        rgba(255, 255, 255, 0.6),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 130px 80px,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      ),
+      radial-gradient(
+        2px 2px at 160px 30px,
+        rgba(255, 255, 255, 0.7),
+        transparent
+      );
     background-repeat: repeat;
     background-size: 200px 100px;
     animation: twinkle 8s ease-in-out infinite alternate;
@@ -185,17 +211,36 @@
   }
 
   .bg-gradient-mesh {
-    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 25%, #c084fc 50%, #e879f9 75%, #8b5cf6 100%);
+    background: linear-gradient(
+      135deg,
+      #8b5cf6 0%,
+      #a855f7 25%,
+      #c084fc 50%,
+      #e879f9 75%,
+      #8b5cf6 100%
+    );
     background-size: 400% 400%;
     animation: gradientShift 15s ease-in-out infinite;
   }
 
   .bg-gradient-radial {
-    background: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, rgba(168, 85, 247, 0.1) 25%, transparent 50%);
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(139, 92, 246, 0.15) 0%,
+      rgba(168, 85, 247, 0.1) 25%,
+      transparent 50%
+    );
   }
 
   .bg-gradient-conic {
-    background: conic-gradient(from 0deg at 50% 50%, #8b5cf6, #a855f7, #c084fc, #e879f9, #8b5cf6);
+    background: conic-gradient(
+      from 0deg at 50% 50%,
+      #8b5cf6,
+      #a855f7,
+      #c084fc,
+      #e879f9,
+      #8b5cf6
+    );
     background-size: 200% 200%;
     animation: gradientShift 20s linear infinite;
   }
@@ -255,17 +300,13 @@
   }
 
   .glow-effect {
-    box-shadow: 
-      0 0 20px rgba(139, 92, 246, 0.3),
-      0 0 40px rgba(168, 85, 247, 0.2),
-      0 0 80px rgba(192, 132, 252, 0.1);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3),
+      0 0 40px rgba(168, 85, 247, 0.2), 0 0 80px rgba(192, 132, 252, 0.1);
   }
 
   .glow-effect-strong {
-    box-shadow: 
-      0 0 30px rgba(139, 92, 246, 0.5),
-      0 0 60px rgba(168, 85, 247, 0.3),
-      0 0 120px rgba(192, 132, 252, 0.2);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.5),
+      0 0 60px rgba(168, 85, 247, 0.3), 0 0 120px rgba(192, 132, 252, 0.2);
   }
 
   .card-modern {
@@ -277,7 +318,11 @@
   }
 
   .floating-orb {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.6), rgba(168, 85, 247, 0.4));
+    background: linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.6),
+      rgba(168, 85, 247, 0.4)
+    );
     border-radius: 50%;
     filter: blur(60px);
     animation: float 8s ease-in-out infinite, morph 15s ease-in-out infinite;
@@ -289,20 +334,40 @@
 
   .border-gradient {
     border: 2px solid transparent;
-    background: linear-gradient(rgba(26, 11, 46, 0.8), rgba(26, 11, 46, 0.8)) padding-box,
-                linear-gradient(135deg, #8b5cf6, #a855f7) border-box;
+    background: linear-gradient(rgba(26, 11, 46, 0.8), rgba(26, 11, 46, 0.8))
+        padding-box,
+      linear-gradient(135deg, #8b5cf6, #a855f7) border-box;
   }
 
   .starfield {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: 
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
-      radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.6), transparent),
-      radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.4), transparent),
-      radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,0.7), transparent);
+    background-image: radial-gradient(
+        2px 2px at 20px 30px,
+        #ffffff,
+        transparent
+      ),
+      radial-gradient(
+        2px 2px at 40px 70px,
+        rgba(255, 255, 255, 0.8),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 90px 40px,
+        rgba(255, 255, 255, 0.6),
+        transparent
+      ),
+      radial-gradient(
+        1px 1px at 130px 80px,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      ),
+      radial-gradient(
+        2px 2px at 160px 30px,
+        rgba(255, 255, 255, 0.7),
+        transparent
+      );
     background-repeat: repeat;
     background-size: 200px 100px;
     animation: twinkle 8s ease-in-out infinite alternate;
@@ -386,7 +451,8 @@
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   25% {
@@ -401,7 +467,8 @@
 }
 
 @keyframes bounceSlow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -419,22 +486,49 @@
 }
 
 @keyframes wiggle {
-  0%, 7%, 14%, 21%, 28%, 35%, 42%, 49%, 56%, 63%, 70%, 77%, 84%, 91%, 98%, 100% {
+  0%,
+  7%,
+  14%,
+  21%,
+  28%,
+  35%,
+  42%,
+  49%,
+  56%,
+  63%,
+  70%,
+  77%,
+  84%,
+  91%,
+  98%,
+  100% {
     transform: rotate(0deg);
   }
   3.5% {
     transform: rotate(-8deg);
   }
-  10.5%, 24.5%, 38.5%, 52.5%, 66.5%, 80.5%, 94.5% {
+  10.5%,
+  24.5%,
+  38.5%,
+  52.5%,
+  66.5%,
+  80.5%,
+  94.5% {
     transform: rotate(8deg);
   }
-  17.5%, 31.5%, 45.5%, 59.5%, 73.5%, 87.5% {
+  17.5%,
+  31.5%,
+  45.5%,
+  59.5%,
+  73.5%,
+  87.5% {
     transform: rotate(-8deg);
   }
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 40px rgba(139, 92, 246, 0.4);
     transform: scale(1);
   }
@@ -457,7 +551,8 @@
 }
 
 @keyframes morph {
-  0%, 100% {
+  0%,
+  100% {
     border-radius: 50% 50% 50% 50%;
   }
   25% {
@@ -505,7 +600,8 @@
 }
 
 @keyframes sparkle {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
     transform: scale(1);
   }

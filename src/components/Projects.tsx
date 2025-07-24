@@ -19,7 +19,7 @@ const Projects = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-6xl md:text-8xl font-black mb-8 text-white animate-fade-up drop-shadow-lg">
+            <h2 className="text-5xl md:text-7xl font-black mb-6 text-white animate-fade-up drop-shadow-lg">
               Projetos
             </h2>
             <div

@@ -1,30 +1,63 @@
-import { FileJson, Atom, Wind, Server } from "lucide-react";
+import {
+  FileJson,
+  Atom,
+  Wind,
+  Server,
+  Globe,
+  PaintBucket,
+  Code2,
+  FileCode,
+} from "lucide-react";
 
 const Technologies = () => {
   const technologies = [
     {
+      name: "HTML",
+      icon: Globe,
+      description: "Estrutura essencial para páginas web",
+      color: "from-orange-500 to-orange-600",
+    },
+    {
+      name: "CSS",
+      icon: PaintBucket,
+      description: "Estilização visual e responsiva",
+      color: "from-blue-500 to-blue-600",
+    },
+    {
+      name: "JavaScript",
+      icon: Code2,
+      description: "Linguagem de programação da web",
+      color: "from-yellow-400 to-yellow-500",
+    },
+    {
+      name: "PHP",
+      icon: FileCode,
+      description: "Back-end simples e robusto",
+      color: "from-indigo-500 to-indigo-600",
+    },
+    {
       name: "TypeScript",
       icon: FileJson,
+      description: "JavaScript com tipagem estática",
       color: "from-blue-500 to-blue-600",
-      bgColor: "bg-blue-500/10",
     },
     {
       name: "React",
       icon: Atom,
+      description: "Biblioteca para interfaces modernas",
       color: "from-cyan-500 to-cyan-600",
-      bgColor: "bg-cyan-500/10",
     },
     {
       name: "Node.js",
       icon: Server,
+      description: "Execução de JavaScript no servidor",
       color: "from-green-500 to-green-600",
-      bgColor: "bg-green-500/10",
     },
     {
       name: "Tailwind CSS",
       icon: Wind,
+      description: "Estilização com classes utilitárias",
       color: "from-purple-500 to-purple-600",
-      bgColor: "bg-purple-500/10",
     },
   ];
 
@@ -39,7 +72,6 @@ const Technologies = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-radial opacity-30"></div>
 
-        {/* Additional Elements */}
         <div className="absolute top-20 right-20 w-4 h-4 bg-purple-400/30 rounded-full animate-pulse"></div>
         <div
           className="absolute bottom-20 left-20 w-2 h-2 bg-indigo-400/40 rounded-full animate-pulse"
@@ -53,11 +85,11 @@ const Technologies = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-24">
-          <h2 className="text-6xl md:text-8xl font-black mb-8 text-white animate-fade-up">
+          <h2 className="text-5xl md:text-7xl font-black mb-6 text-white animate-fade-up drop-shadow-lg">
             Tecnologias
           </h2>
           <p
-            className="text-2xl md:text-3xl text-gray-100 max-w-4xl mx-auto animate-fade-up leading-relaxed font-light"
+            className="text-3xl md:text-3xl text-gray-100 max-w-3xl mx-auto animate-fade-up leading-relaxed font-light"
             style={{ animationDelay: "0.2s" }}
           >
             Ferramentas que domino para criar{" "}
@@ -74,7 +106,6 @@ const Technologies = () => {
               className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10 hover:bg-white/10 hover:scale-105 transition-all duration-300 animate-scale-in relative overflow-hidden"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              {/* Background Gradient */}
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}
               ></div>
@@ -86,11 +117,13 @@ const Technologies = () => {
                   <tech.icon className="h-12 w-12 text-white" />
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-6 text-center group-hover:text-purple-300 transition-all duration-300">
+                <h3 className="text-2xl font-bold text-white mb-4 text-center group-hover:text-purple-300 transition-all duration-300">
                   {tech.name}
                 </h3>
 
-                <p className="text-gray-200 text-center leading-relaxed text-lg"></p>
+                <p className="text-gray-300 text-center leading-relaxed text-base">
+                  {tech.description}
+                </p>
               </div>
             </div>
           ))}
