@@ -51,7 +51,7 @@ const About = () => {
 
           <div className="md:w-1/3 flex justify-center md:justify-end animate-slide-in-right">
             <img
-              src="public/images/memoji.jpg"
+              src="/images/memoji.jpg"
               alt="Bernardo Memoji"
               className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-purple-500 shadow-xl"
             />
